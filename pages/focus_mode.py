@@ -84,30 +84,30 @@ st.divider()
 
 st.markdown("""
 
-### 🎵 Focus Music
+### 🔊 Focus Sounds
 
 """)
 
 col1, col2, col3 , col4 = st.columns(4)
 
 with col1:
-    lofi = st.toggle(" 🎧 Lofi")
+    qraan = st.toggle(" 🕌 Qraan")
 with col2:
     nature = st.toggle(" 🌳 Nature")
 with col3:
     ocean = st.toggle(" 🌊 Ocean")
 with col4:
-    piano = st.toggle(" 🎹 Piano")
+    wind = st.toggle(" 💨 Wind")
     
 
-if lofi:
-    st.audio("sounds/lofi.mp3", autoplay=True)
+if qraan:
+    st.audio("sounds/qraan.mp3", autoplay=True)
 if nature:
     st.audio("sounds/nature.mp3", autoplay=True)
 if ocean:
     st.audio("sounds/ocean.mp3", autoplay=True)
-if piano:
-    st.audio("sounds/piano.mp3", autoplay=True)
+if wind:
+    st.audio("sounds/wind.mp3", autoplay=True)
 
 st.markdown("<div class='st.my-divider'></div>", unsafe_allow_html=True)
 
